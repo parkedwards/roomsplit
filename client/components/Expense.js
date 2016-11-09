@@ -19,16 +19,26 @@ export default React.createClass({
       <div>
         <form className="form-inline" onSubmit={this.submitExpense}>
           <div className="form-group">
-            Date: <input type="date" className="form-control" name="expenseDate" /><br />
+            <label>Date:</label>
+            <input type="date" className="form-control" name="expenseDate" /><br />
           </div>
           <div className="form-group">
-            Expense Name: <input type="text" className="form-control" name="expenseName" /><br />
+            <label>Expense Name:</label>
+            <input type="text" className="form-control" name="expenseName" /><br />
           </div>
+
           <div className="form-group">
-            Amount: <input type="number" className="form-control" name="expenseAmount" /><br />
+            <label>Amount (in dollars): </label>
+            <div className="input-group">
+              <div className="input-group-addon">$</div>
+              <input type="text" className="form-control" name="expenseAmount" placeholder="Amount" />
+              <div className="input-group-addon">.00</div>
+            </div>
           </div>
+
           <button type="submit" className="btn btn-primary">Add a Bill</button>
         </form>
+
       </div>
     )
   }

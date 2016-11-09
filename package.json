@@ -18,10 +18,11 @@
     "moment": "^2.15.2",
     "mongodb": "^2.0.47",
     "mongoose": "^4.6.5",
+    "querystring": "^0.2.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-router": "^3.0.0",
-    "request": "^2.65.0"
+    "request": "^2.78.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",
